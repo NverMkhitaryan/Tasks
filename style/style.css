@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.card, form button, form .field input, form .field, form h2, .tasks .cancel, .tasks .done {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.tasks .cancel, .tasks .done {
+  width: 214px;
+  height: 49px;
+  color: #fff;
+  text-align: center;
+}
+
+.tasks {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.tasks .done {
+  background-color: #27AE60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tasks .cancel {
+  background-color: #E74C3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form h2 {
+  text-align: center;
+}
+form .field input {
+  margin-top: 10px;
+  padding: 10px 25px;
+}
+form button {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 25px;
+  margin-top: 10px;
+  color: #F39C12;
+  border: 2px solid #F39C12;
+}
+
+.card + .card {
+  margin-top: 15px;
+}
+
+.card {
+  margin-top: 40px;
+  background-color: #34495E;
+  color: #fff;
+  width: 408px;
+  padding-left: 20px;
+}
+.card .task-name {
+  display: flex;
+  justify-content: space-between;
+}
+.card .task-name .btn-done {
+  width: 60px;
+  height: 60px;
+  background: #27AE60 url(../media/done.svg) no-repeat center;
+}
+.card .task-text {
+  display: flex;
+  justify-content: space-between;
+}
+.card .task-text .btn-cancel {
+  width: 60px;
+  height: 60px;
+  background: #E74C3C url(../media/cancel.svg) no-repeat center;
+}
+
+/*# sourceMappingURL=style.css.map */
